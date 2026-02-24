@@ -20,7 +20,7 @@ import { LeadsModule } from './leads/leads.module';
         password: config.get<string>('DB_PASSWORD'),
         database: config.get<string>('DB_NAME'),
         entities: [Lead],
-        synchronize: true,
+        synchronize: false,
       }),
     }),
     LeadsModule,
